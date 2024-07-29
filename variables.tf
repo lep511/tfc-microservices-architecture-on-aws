@@ -34,11 +34,13 @@ variable "private_subnet_count" {
 variable "database_private_ip" {
   type        = string
   description = "Private ip address of database"
+  default     = "10.255.1.100"
 }
 
 variable "ec2_key_pair" {
   type        = string
   description = "EC2 key pair"
+  default     = "learning-live-with-aws-hashicorp"
 }
 
 variable "database_service_name" {
